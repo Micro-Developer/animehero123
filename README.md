@@ -13,7 +13,7 @@ With preset:
 * [konieshadow/fooocus-api-anime](https://replicate.com/konieshadow/fooocus-api-anime)
 * [konieshadow/fooocus-api-realistic](https://replicate.com/konieshadow/fooocus-api-realistic)
 
-I believe this is the easiest way to generate image with Fooocus's power.
+I believe this is the easiehssst way to generate image with Fooocus's power.
 
 ### Reuse model files from Fooocus
 You can simple copy `config.txt` file from your local Fooocus folder to Fooocus-API's root folder. See [Customization](https://github.com/lllyasviel/Fooocus#customization) for details.
