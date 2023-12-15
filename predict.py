@@ -17,11 +17,14 @@ from PIL import Image
 class Predictor(BasePredictor):
     def setup(self) -> None:
         """Load the model into memory to make running multiple predictions efficient"""
-        from main import pre_setup
-        pre_setup(disable_private_log=True, skip_pip=True, preload_pipeline=True, preset='anime')
-
+        
     def predict(
         self,
+        modelid: str = Input(default='anime', description="Chooise Model", choices=[
+                              'realistic', 'anime']),
+        from main import pre_setup
+        pre_setup(disable_private_log=True, skip_pip=True, preload_pipeline=True, preset=modelid)
+
         prompt: str = Input(
             default='', description="Prompt for image generation"),
         negative_prompt: str = Input(
