@@ -12,6 +12,7 @@ from fooocusapi.worker import process_generate, task_queue
 from fooocusapi.file_utils import output_dir
 import numpy as np
 from PIL import Image
+from main import pre_setup
 
 
 class Predictor(BasePredictor):
@@ -22,7 +23,6 @@ class Predictor(BasePredictor):
         self,
         modelid: str = Input(default='anime', description="Chooise Model", choices=[
                               'realistic', 'anime']),
-        from main import pre_setup
         pre_setup(disable_private_log=True, skip_pip=True, preload_pipeline=True, preset=modelid)
 
         prompt: str = Input(
