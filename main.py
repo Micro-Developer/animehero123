@@ -173,7 +173,7 @@ def download_repositories():
 
     # Check and download Fooocus
     fooocus_repo = os.environ.get(
-        'FOOOCUS_REPO', 'https://github.com/lllyasviel/Fooocus')
+        'FOOOCUS_REPO', 'https://github.com/unbeatablered/Fooocus')
     git_clone(fooocus_repo, repo_dir(fooocus_name),
               "Fooocus", fooocus_commit_hash)
     
