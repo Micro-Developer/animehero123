@@ -7,7 +7,7 @@ FastAPI powered API for [Fooocus](https://github.com/lllyasviel/Fooocus)
 Currently loaded Fooocus version: 2.1.806
 
 ### Run with Replicate
-Now you can use Fooocus-API by Replicate, the model is in [konieshadow/fooocus-api](https://replicate.com/konieshadow/fooocus-api).
+Now you can use Fooocus-API by Replicate, the model is in [konieshadow/fooocus-api](https://replicate.com/koniesbhadow/fooocus-api).
 
 With preset:
 * [konieshadow/fooocus-api-anime](https://replicate.com/konieshadow/fooocus-api-anime)
