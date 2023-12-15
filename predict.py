@@ -12,19 +12,17 @@ from fooocusapi.worker import process_generate, task_queue
 from fooocusapi.file_utils import output_dir
 import numpy as np
 from PIL import Image
-from main import pre_setup
 
 
 class Predictor(BasePredictor):
     def setup(self) -> None:
         """Load the model into memory to make running multiple predictions efficient"""
+        from main import pre_setup
+        pre_setup(disable_private_log=True, skip_pip=True, preload_pipeline=True, preset=None)
+
         
     def predict(
         self,
-        modelid: str = Input(default='anime', description="Chooise Model", choices=[
-                              'realistic', 'anime']),
-        pre_setup(disable_private_log=True, skip_pip=True, preload_pipeline=True, preset=modelid)
-
         prompt: str = Input(
             default='', description="Prompt for image generation"),
         negative_prompt: str = Input(
