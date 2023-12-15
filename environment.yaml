@@ -1,4 +1,4 @@
-name: fooocus-api
+name: test-api
 channels:
   - defaults
 dependencies:
